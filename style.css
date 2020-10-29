@@ -1,0 +1,34 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+#button {
+  position: relative;
+  height: 10em;
+  width: 20em;
+  margin: auto;
+  background-color: hsl(10, 100%, 45%);
+  border-radius: 25%;
+  border: 2px solid black;
+  border-top: none;
+}
+
+#button::before {
+  position: absolute;
+  content: "";
+  height: 5em;
+  width: 20em;
+  margin: auto;
+  background-color: hsl(10, 100%, 45%);
+  border: 2px solid black;
+  border-radius: 50%;
+  top: -8px;
+  left: -2px;
+}
+
+#button:hover {
+  height: 9em;
+  cursor: pointer;
+}
